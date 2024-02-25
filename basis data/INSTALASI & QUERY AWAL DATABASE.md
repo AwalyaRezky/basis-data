@@ -38,7 +38,7 @@ Perintah `mySQL -u root -p` adalah sebuah perintah untuk memanggil mysql.
 ### Contoh Query
 `CREATE DATABASE XI_RPL_1;`
 ### Hasil
-![[CREATE.png|500]]
+![gambar](ASET/CREATE.png|500)
 ### Analisis
 - ``CREATE DATABASE`` digunakan untuk membuat database baru.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama yang Anda inginkan untuk database tersebut. Misalnya, jika Anda ingin membuat database dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -54,8 +54,8 @@ perintah `create database` digunakan untuk membuat database
 ### Contoh Query
 `SHOW DATABASES;`
 ### Hasil
-![[SHOW.png|500]]
-![[show (2).png|500]]
+![gambar](ASET/SHOW.png|500)
+![GAMBAR](ASET/TAMPILKAN.PNG|500)
 ### Analisis
 - ``SHOW DATABASES`` bertujuan untuk menampilkan semua daftar basis data yang ada dalam sistem manajemen basis data.
 - ``;``  digunakan sebagai pemisah antara pernyataan atau instruksi individual dalam query SQL. Dengan menggunakan tanda titik koma, Anda memberi tahu sistem manajemen basis data bahwa perintah yang satu telah selesai dan perintah berikutnya akan dimulai.
@@ -69,7 +69,7 @@ Perintah `SHOW DATABASES` digunakan untuk menampilkan daftar database yang sudah
 ### Contoh Query
 `DROP DATABASE XI_RPL_1;`
 ### Hasil
-![[DROP.png|500]]
+![GAMBAR](ASET/DROP.png|500)
 ### Analisis
 - ``DROP DATABASE`` bertujuan untuk menghapus sebuah basis data yang ada dalam sistem manajemen basis data.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama basis data yang ingin Anda hapus. Misalnya, jika Anda ingin menghapus basis data dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -85,7 +85,7 @@ Perintah `SHOW DATABASES` digunakan untuk menampilkan daftar database yang sudah
 ### Contoh Query
 `USE XI_RPL_1;`
 ### Hasil
-![[USE.png|500]]
+![GAMBAR](ASET/USE.png|500)
 ### Analisis
 - ``USE`` bertujuan untuk mengarahkan perintah-perintah SQL selanjutnya untuk menggunakan atau bekerja dengan basis data yang ditentukan.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama basis data yang ingin Anda gunakan. Misalnya, jika Anda ingin menggunakan basis data dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -126,7 +126,7 @@ Perintah `SHOW DATABASES` digunakan untuk menampilkan daftar database yang sudah
 ### Contoh Query
 `create table mobil;`
 ### Hasil
-![[Screenshot 2024-02-06 132717.png]]
+![GAMBAR](ASET/BUAT_TABEL.PNG)
 ### Analisis
 `create table` adalah perintah untuk membuat tabel.
 `mobil` adalah nama tabel yang akan dibuat.
@@ -150,7 +150,7 @@ CREATE TABLE mobil (
 -> warna_mobil varchar(10) not null unique);
 ```
 ### Hasil
-![[Screenshot 2024-02-06 132929.png]]
+![GAMBAR](ASET/struktur_buat_tabel.png)
 ### Analisis
 jadi secara urutan adalah: nama field, tipe data(jumlah karakter) dan keterangan perintahnya.
 terdapat 4 baris yang dimana baris 1 adalah perintah membuat tabel dan baris 2 sampai 4 adalah daftar field yang akan dibuat pada tabel kita serta diakhiri dengan tutup kurung sebagai penutup.
@@ -169,7 +169,7 @@ desc [nama_tabel];
 desc mobil;
 ```
 ### Hasil
-![[Screenshot 2024-02-06 133022.png]]
+![gambar](ASET/struktur_tabel.png)
 ### Analisis
 - `desc`: perintah untuk menampilkan filed tabel tersebut.
 - `mobil`: nama tabel yang mau dicek desk nya.
@@ -186,7 +186,7 @@ show tables;
 show tables;
 ```
 ### Hasil
-![[Screenshot 2024-02-06 133431.png|500]]
+![gambar](ASET/show_tables.png)
 ### Analisis
 Pada database rental_alya terdapat 1 tabel yaitu bernama table "mobil", yang sudah dibuat sebelumnya.  Jadi untuk melihat tabel yang sudah dibuat maka ketik `show tables;` maka tabel yang berhasil dibuat akan tampil.
 ### Kesimpulan
@@ -214,7 +214,7 @@ INSERT INTO Pelanggan
 VALUES (1, "REZKY", "AWALYA", "082345952007");
 ```
 ### Hasil
-![[INSERT1DATA.png]]
+![GAMBAR](ASET/INSERT1DATA.png)
 ### Analisis
 1. `insert into` adalah query yang digunakan untuk menginput isi table
 2. `pelanggan` adalah nama table yang ingin di isi
@@ -240,7 +240,7 @@ VALUES (2, "NUR", "INAYAH", "08327684498"),
 (4, "AZIKIN", NULL, NULL);
 ```
 ### Hasil
-![[INSERTLEBIH2DATA.png]]
+![GAMBAR](ASET/INSERTLEBIH2DATA.png)
 ### Analisis
 1. `insert into` adalah query yang digunakan untuk menginput isi table
 2. `pelanggan` adalah nama table yang ingin di isi
@@ -264,7 +264,7 @@ INSERT INTO Pelanggan
 VALUES ("ARIL", 5)
 ```
 ### Hasil
-![[MENYEBUT KOLOM.png]]
+![GAMBAR](ASET/MENYEBUT_KOLOM.png)
 ### Analisis
 - `insert into` adalah perintah untuk menginput isi tabel
 - `(nama_depan, id)` adalah nama kolom yang akan di isi
@@ -287,7 +287,7 @@ SELECT * FROM [nama_tabel];
 SELECT * FROM Pelanggan;
 ```
 ### Hasil
-![[select (2).png]]
+![GAMBAR](ASET/select.png)
 ### Analisis
 - `select * from` perintah query untuk menampilkan data
 - `pelanggan` merupakan nama tabel yang ingin ditampilkan datanya.
@@ -304,7 +304,7 @@ FROM [nama_tabel];
 SELECT nama_depan FROM Pelanggan;
 ```
 ### Hasil
-![[select.png]]
+![GAMBAR](ASET/select.png)
 ### Analisis
 Untuk menampilkan data tertentu saja, caranya yaitu dengan menggunakan perintah `SELECT` kemudian diikuti oleh nama kolom yang ingin ditampilkan, yaitu `nama_depan`. Kemudian dilanjutkan dengan mengetik perintah `FROM` dan diikuti dengan nama tabel yaitu `pelanggan`.
 ### Kesimpulan
@@ -328,9 +328,9 @@ SELECT * FROM Pelanggan
 WHERE id_pelanggan=4;
 ```
 ### Hasil
-![[where.png]]
+![GAMBAR](ASET/where.png)
 
-![[WHERE (3).png]]
+![GAMBAR](ASET/WHEREE.png)
 
 ### Analisis
 Jadi untuk mencari data nomor 4, yaitu dengan cara mengetikkan perintah `select * from pelanggan`. Hal ini menunjukkan bahwa data tersebut berada di tabel `pelanggan`, kemudian ketik `WHERE id_pelanggan=4`, yang berarti cari data yang id pelanggannya bernomor  4.
@@ -349,7 +349,7 @@ UPDATE nama_tabel SET nama_kolom WHERE kondisi;
 UPDATE pelanggan SET No_Telp="082478346" WHERE id_pelanggan="4";
 ```
 ## Hasil
-![[update.png|500]]
+![GAMBAR](ASET/update.png|500)
 ## Analisis
 1. `UPDATE`: adalah kata kunci yang berarti bahwa kita ingin melakukan operasi pembaruan data.
 2. `pelanggan`: Ini adalah nama tabel yang akan kita perbarui.
@@ -368,7 +368,7 @@ DELETE FROM nama_tabel WHERE kondisi;
 DELETE FROM pelanggan WHERE id_pelanggan=5;
 ```
 ## Hasil
-![[delete.png||500]]
+![GAMBAR](ASET/delete.png||500)
 ## Analisis
 Untuk menghapus baris data nomor 5, caranya yaitu dengan mengetikkan `DELETE FROM pelanggan` yang menandakan di tabel mana kita akan menghapus item data tertentu, contohnya tabel `pelanggan`. Kemudian ketik `WHERE id_pelanggan=5`, yang berarti hapus item yang ada di id_pelanggan nomor 5.
 ## Kesimpulan 
