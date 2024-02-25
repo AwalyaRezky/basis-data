@@ -22,7 +22,7 @@ Buka Aplikasi XAMPP
 ## Query
 ``MySQL -u root -p``
 ## Hasil
-![mysq|500](ASET/MYSQL.PNG)
+![mysL](ASET/MYSQL.PNG)
 ## Analisis
 - ``MySQL`` adalah perintah untuk memanggil program MySQL dari baris perintah.
 - ``-u`` diikuti oleh nama pengguna (username) yang akan digunakan untuk masuk ke server MySQL. Dalam contoh ini, "root" adalah nama pengguna yang digunakan.
@@ -38,7 +38,7 @@ Perintah `mySQL -u root -p` adalah sebuah perintah untuk memanggil mysql.
 ### Contoh Query
 `CREATE DATABASE XI_RPL_1;`
 ### Hasil
-![gambar](ASET/CREATE.png|500)
+![gambar](ASET/CREATE.png)
 ### Analisis
 - ``CREATE DATABASE`` digunakan untuk membuat database baru.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama yang Anda inginkan untuk database tersebut. Misalnya, jika Anda ingin membuat database dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -54,8 +54,8 @@ perintah `create database` digunakan untuk membuat database
 ### Contoh Query
 `SHOW DATABASES;`
 ### Hasil
-![gambar](ASET/SHOW.png|500)
-![GAMBAR](ASET/TAMPILKAN.PNG|500)
+![gambar](ASET/SHOW.png)
+![GAMBAR](ASET/TAMPILKAN.PNG)
 ### Analisis
 - ``SHOW DATABASES`` bertujuan untuk menampilkan semua daftar basis data yang ada dalam sistem manajemen basis data.
 - ``;``  digunakan sebagai pemisah antara pernyataan atau instruksi individual dalam query SQL. Dengan menggunakan tanda titik koma, Anda memberi tahu sistem manajemen basis data bahwa perintah yang satu telah selesai dan perintah berikutnya akan dimulai.
@@ -69,7 +69,7 @@ Perintah `SHOW DATABASES` digunakan untuk menampilkan daftar database yang sudah
 ### Contoh Query
 `DROP DATABASE XI_RPL_1;`
 ### Hasil
-![GAMBAR](ASET/DROP.png|500)
+![GAMBAR](ASET/DROP.png)
 ### Analisis
 - ``DROP DATABASE`` bertujuan untuk menghapus sebuah basis data yang ada dalam sistem manajemen basis data.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama basis data yang ingin Anda hapus. Misalnya, jika Anda ingin menghapus basis data dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -85,7 +85,7 @@ Perintah `SHOW DATABASES` digunakan untuk menampilkan daftar database yang sudah
 ### Contoh Query
 `USE XI_RPL_1;`
 ### Hasil
-![GAMBAR](ASET/USE.png|500)
+![GAMBAR](ASET/USE.png)
 ### Analisis
 - ``USE`` bertujuan untuk mengarahkan perintah-perintah SQL selanjutnya untuk menggunakan atau bekerja dengan basis data yang ditentukan.
 - ``[nama_database]`` Anda akan mengganti [nama_database] dengan nama basis data yang ingin Anda gunakan. Misalnya, jika Anda ingin menggunakan basis data dengan nama "XI_RPL_1", maka query yang tepat akan menjadi:
@@ -349,7 +349,7 @@ UPDATE nama_tabel SET nama_kolom WHERE kondisi;
 UPDATE pelanggan SET No_Telp="082478346" WHERE id_pelanggan="4";
 ```
 ## Hasil
-![GAMBAR](ASET/update.png|500)
+![GAMBAR](ASET/update.png)
 ## Analisis
 1. `UPDATE`: adalah kata kunci yang berarti bahwa kita ingin melakukan operasi pembaruan data.
 2. `pelanggan`: Ini adalah nama tabel yang akan kita perbarui.
@@ -368,7 +368,7 @@ DELETE FROM nama_tabel WHERE kondisi;
 DELETE FROM pelanggan WHERE id_pelanggan=5;
 ```
 ## Hasil
-![GAMBAR](ASET/delete.png||500)
+![GAMBAR](ASET/delete.png)
 ## Analisis
 Untuk menghapus baris data nomor 5, caranya yaitu dengan mengetikkan `DELETE FROM pelanggan` yang menandakan di tabel mana kita akan menghapus item data tertentu, contohnya tabel `pelanggan`. Kemudian ketik `WHERE id_pelanggan=5`, yang berarti hapus item yang ada di id_pelanggan nomor 5.
 ## Kesimpulan 
@@ -394,7 +394,7 @@ INSERT INTO mobil
 -> (5,"DD 2210 LS","CJH1011","HITAM","AYA",NULL,"100000");
 ```
 ## Hasil
-![tugas|500](Aset/tugas.png)
+![tugas](Aset/tugas.png)
 
 ## Analisis
 1. `insert into` adalah query yang digunakan untuk menginput isi table
