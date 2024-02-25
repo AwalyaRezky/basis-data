@@ -22,7 +22,7 @@ Buka Aplikasi XAMPP
 ## Query
 ``MySQL -u root -p``
 ## Hasil
-![mysL](ASET/MYSQL.PNG)
+![mysql](ASET/MYSQL.PNG)
 ## Analisis
 - ``MySQL`` adalah perintah untuk memanggil program MySQL dari baris perintah.
 - ``-u`` diikuti oleh nama pengguna (username) yang akan digunakan untuk masuk ke server MySQL. Dalam contoh ini, "root" adalah nama pengguna yang digunakan.
